@@ -35,12 +35,12 @@ def post_new_user():
         # maak nieuwe gebruiker aan
         new_user = UserPasswords(user_name=user_name, password=password, gender=gender, age=age)
 
-        # zet de data om naar een txt bestand
-        logData(UserPasswords.query.all())
-
         # voeg de gebruiker toe aan de database
         db.session.add(new_user)
         db.session.commit()
+
+        # zet de data om naar een txt bestand
+        logData(UserPasswords.query.all())
     except Exception as e:
         print(f"something went wrong while adding the user: {e}")
         return jsonify({"message": "something went wrong while adding the user"}), 400

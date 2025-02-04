@@ -1,6 +1,5 @@
 from config import db, app
 
-
 class UserPasswords(db.Model):
     id = db.Column(db.Integer, primary_key=True)        # zodat sql de data kan terugvinden
     user_name = db.Column(db.String(20), nullable=False, unique=True)
@@ -16,3 +15,7 @@ class UserPasswords(db.Model):
             "gender": self.gender,
             "age": self.age
         }
+
+
+with app.app_context():
+    db.create_all()
