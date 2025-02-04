@@ -18,7 +18,7 @@ def get_paswords():
 def post_new_user():
     # try except om errors goed te handelen
     try:
-        # haal alle gevraagde data op
+        # haal alle gevraagde data op (test
         user_name = request.json.get("userName")
         password = request.json.get("password")
         gender = request.json.get("gender")
