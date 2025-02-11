@@ -1,5 +1,6 @@
 <h2 style="color: green;">de drie lagen van mijn project:</h2>
-#### ![3-lagen](https://www.c-sharp.be/wp-content/uploads/2015/11/3TierModel-300x222.jpg)
+
+![3-lagen](https://www.c-sharp.be/wp-content/uploads/2015/11/3TierModel-300x222.jpg)
 
 ---
 
